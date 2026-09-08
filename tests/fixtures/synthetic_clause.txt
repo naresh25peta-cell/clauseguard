@@ -1,0 +1,5 @@
+SYNTHETIC EXAMPLE — NOT REAL CONTRACT TEXT.
+
+Buyer may narrow the delivery window no later than 14 days prior to the start of the
+initial delivery window. Such narrowed window shall be a period of three (3) consecutive
+days. Once narrowed, the window shall be deemed final and binding on both parties.

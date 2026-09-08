@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "clauseguard"
+version = "0.1.0"
+description = "LLM-powered assistant for extracting and scoring contract clauses, and scanning agreements for risk"
+authors = ["Naresh Kumar"]
+packages = [{include = "clauseguard", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+openai = "^1.30"
+pdfplumber = "^0.11"
+python-dotenv = "^1.0"
+fastapi = "^0.111"
+uvicorn = "^0.30"
+rich = "^13.7"
+typer = "^0.15"
+click = "<8.2"
+reportlab = "^4.5.1"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.2"
+
+[tool.poetry.scripts]
+clauseguard     = "clauseguard.cli:cli"
+clauseguard-api = "clauseguard.api_runner:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

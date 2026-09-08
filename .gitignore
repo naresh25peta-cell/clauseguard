@@ -1,0 +1,10 @@
+.env
+data/db/
+data/pdfs/
+reports/
+.pytest_cache/
+__pycache__/
+*.pyc
+.venv/
+dist/
+.claude/
