@@ -12,10 +12,12 @@ Tables:
 NominationRules has 9 extraction fields + 4 identity columns.
 """
 import sqlite3
+from pathlib import Path
 from clauseguard.config import DB_PATH
 
 
 def get_connection() -> sqlite3.Connection:
+    Path(DB_PATH).parent.mkdir(parents=True, exist_ok=True)
     conn = sqlite3.connect(DB_PATH)
     conn.row_factory = sqlite3.Row
     return conn
