@@ -69,6 +69,7 @@ def field_table(rows):
 # ══════════════════════════════════════════════════════════════════════════════
 
 def build_cn():
+    CN_PATH.parent.mkdir(parents=True, exist_ok=True)
     doc = SimpleDocTemplate(
         str(CN_PATH), pagesize=A4,
         leftMargin=2*cm, rightMargin=2*cm, topMargin=2*cm, bottomMargin=2*cm
@@ -220,6 +221,7 @@ def build_cn():
 # ══════════════════════════════════════════════════════════════════════════════
 
 def build_msa():
+    MSA_PATH.parent.mkdir(parents=True, exist_ok=True)
     doc = SimpleDocTemplate(
         str(MSA_PATH), pagesize=A4,
         leftMargin=2*cm, rightMargin=2*cm, topMargin=2*cm, bottomMargin=2*cm
